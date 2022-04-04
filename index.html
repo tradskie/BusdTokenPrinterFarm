@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BUSD TokenPrinters Farm</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Cryptocurrency Landing Page Template">
+	<meta name="keywords" content="cryptocurrency, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/3c425319c1.js" crossorigin="anonymous"></script>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/themify-icons.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section clearfix">
+		<div class="container-fluid">
+			<a href="index.html" class="site-logo">
+				<!--<img src="img/logo.png" alt="">-->
+
+			</a>
+
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+
+	<!-- Fact section -->
+	<header id="header" class="fixed-top ">
+		<div class="container d-flex align-items-center justify-content-lg-between">
+	
+		  <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">Spaceminers<span>.</span></a></h1> -->
+		  <!-- Uncomment below if you prefer to use an image logo -->
+	   <!--   <a href="#hero" class="logo me-auto me-lg-0"><img src="assets/img/Space-logo.png" alt=""></a>   -->
+		  <nav id="navbar" class="navbar order-last order-lg-0">
+			<ul>
+	  <!--        <li><a class="nav-link scrollto bnb-miner" href="https://bnbmining.finance/" target="_blank">Check out BNB Miner!</a></li>  -->
+			  <li><a class="nav-link scrollto mine" href="https://cakeprinter.online?ref=0x7ec5c8753ed76a517a5c48de14f489f334b33ed2">Cake Tokenprinters</a></li>
+			  <li><a class="nav-link scrollto mine" href="">BNB Tokenprinters Farm</a></li>
+			  <li><a class="nav-link" href="https://testnet.bscscan.com/address/0x24056f47654d5a9f11ea643d5edd7f95d30dcad3#code" target="_blank">Verified Contract</a></li>
+			  <li><a class="nav-link" href="https://t.me/+80penFnC-jQzNDhk" target="_blank">Telegram</a></li>
+			  <li><a class="nav-link" href="https://pancakeswap.finance/swap?outputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56" target="_blank">Buy BUSD</a></li>
+			  <li><a class="nav-link scrollto" href="#reff">Reff Link</a></li>
+			</ul>
+			<i class="bi bi-list mobile-nav-toggle"></i>
+		  </nav><!-- .navbar -->
+		</div>
+	  </header>
+	<!-- Fact section end -->
+
+
+	<!-- Blog section -->
+	<section class="blog-section spad">
+		<br><br><br>
+		<div class="container">
+		<div class="row">
+			<section class="blog-header">
+				<div>
+					<br><br/>
+					<h2>
+						Welcome to TokenPrinters BUSD Farm!
+					</h2>
+		
+				</div>
+			</section>
+				<div class="col-md-4">
+					<br><br>
+					<section class="blog-text">
+						<div class="inner">
+							<header>
+								<h2>User Stats</h2>
+							</header>
+						<p><span class="post-date">My Balance:</span> <span id="user-balance">?</span></p>
+						<p><span class="post-date">Spend Limit:</span> <span id="spend-limit">?</span></p>
+						<p><span class="post-date">Deposits:</span> <span id="user-deposits">?</span></p>
+						<p><span class="post-date">Withdrawn:</span> <span id="user-total-withdrawn">?</span></p>
+						<p><span class="post-date">Referral Bonus:</span> <span id="user-referral-total-bonus">?</span></p>
+					</section>
+				</div>
+				<div class="col-md-4">
+					<br><br>
+					<section class="blog-text">
+						<div class="inner">
+							<header>
+								<h2>Prepare</h2>
+							</header>
+						<!--<p>Balance: <span id="spend-allowance">?</span></p>-->
+						<!--<p>Contract Balance: <span id="contract-balance">?</span></p>-->
+						<p><span class="post-date">Invested:</span> <span id="total-invested">?</span></p>
+						<input class="form-control" id="spend-allowance" name="approve" step="1" type="number" value="10" style="margin-top: 16px;margin-bottom: 16px;">
+							<button class="btn btn-lg btn-sell" onclick="approve()" role="button">Approve Spend</button>
+					</section>
+				</div>
+				<div class="col-md-4">
+					<br><br>
+					<section class="blog-text">
+						<div class="inner">
+							<header>
+								<h2>Withdraw</h2>
+							</header>
+						<p><span class="post-date">Available:</span> <span id="user-available">?</span></p>
+						<button class="btn btn-lg btn-sell" onclick="withdraw()" role="button">Withdraw</button>
+						<br><br/>
+						<br><br/>
+					</section>
+				</div>
+
+			</div>
+
+
+			<div class="section-title text-center">
+				<h2>Pick your ROI</h2>
+			</div>
+			<div class="row">
+				<!-- pool item -->
+				<div class="col-md-3">
+					<div class="blog-item">
+						<figure class="blog-thumb">
+							<img src="img/pools/pool1.jpg" alt="">
+						</figure>
+						<div class="blog-text">
+							<div class="post-date">Minimum 10 BUSD</div>
+							<h4 id="my-invest-plan1" class="blog-title">Balance: 0.000 BUSD</h4>
+							<div>
+								<input class="form-control" id="eth-to-spend1" name="spend" step="10" type="number" value="2" style="margin-top: 16px;margin-bottom: 16px;">
+								<button class="btn btn-lg btn-sell" onclick="investInPlan1()" role="button">Invest</button>
+								<p class="tally-text"><br>
+									<b>Example: You invest 100 BUSD. You can withdraw 6 BUSD every day for the next 45 days.</b>
+									<br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- pool item end -->
+				<!-- pool item -->
+				<div class="col-md-3">
+					<div class="blog-item">
+						<figure class="blog-thumb">
+							<img src="img/pools/pool2.jpg" alt="">
+						</figure>
+						<div class="blog-text">
+							<div class="post-date">Minimum 10 BUSD</div>
+							<h4 id="my-invest-plan2" class="blog-title">Balance: 0.000 BUSD</h4>
+							<div>
+								<input class="form-control" id="eth-to-spend2" name="spend" step="10" type="number" value="2" style="margin-top: 16px;margin-bottom: 16px;">
+								<button class="btn btn-lg btn-sell" onclick="investInPlan2()" role="button">Invest</button>
+								<p class="tally-text"><br>
+									<b>	Example: You invest 100 BUSD. You can withdraw 7 BUSD every day for the next 35 days. </b>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- pool item end -->
+				<!-- pool item -->
+				<div class="col-md-3">
+					<div class="blog-item">
+						<figure class="blog-thumb">
+							<img src="img/pools/pool3.jpg" alt="">
+						</figure>
+						<div class="blog-text">
+							<div class="post-date">Minimum 10 BUSD</div>
+							<h4 id="my-invest-plan3" class="blog-title">Balance: 0.000 BUSD</h4>
+							<div>
+								<input class="form-control" id="eth-to-spend3" name="spend" step="10" type="number" value="2" style="margin-top: 16px;margin-bottom: 16px;">
+								<button class="btn btn-lg btn-sell" onclick="investInPlan3()" role="button">Invest</button>
+								<p class="tally-text"><br>
+									<b>Example: You invest 100 BUSD. You can withdraw 8 BUSD every day for the next 25 days. </b>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- pool item end -->
+				<!-- pool item -->
+				<div class="col-md-3">
+					<div class="blog-item">
+						<figure class="blog-thumb">
+							<img src="img/pools/pool4.jpg" alt="">
+						</figure>
+						<div class="blog-text">
+							<div class="post-date">Minimum 10 BUSD</div>
+							<h4 id="my-invest-plan4" class="blog-title">Balance: 0.000 BUSD</h4>
+							<div>
+								<input class="form-control" id="eth-to-spend4" name="spend" step="10" type="number" value="2" style="margin-top: 16px;margin-bottom: 16px;">
+								<button class="btn btn-lg btn-sell" onclick="investInPlan4()" role="button">Invest</button>
+								<p class="tally-text"><br>
+									<b>	Example: You invest 100 BUSD. You can withdraw 9 BUSD every day for the next 15 days. </b>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- pool item end -->
+
+			</div>
+		</div>
+	</section>
+	<!-- Blog section end -->
+
+	<!-- Process section -->
+	<section id="reff" class="process-section spad gradient-bg">
+		<div class="container text-white">
+			<div class="section-title text-center">
+				<h3>Referral link</b>: <a id="playerreflink" onclick="copyRef()">? </a><br>
+				get 7% back by inviting a new user to the farm <br>
+				</h3>
+				<br>
+				<br>
+				<h2>Get Started BUSD Farming</h2>
+				<p>Start learning about BUSD Farming. It’s fun, easy, and takes only a no time! </p>
+			</div>
+			<div class="row">
+				<div class="col-md-4 process">
+					<div class="process-step">
+						<figure class="process-icon">
+							<img src="img/process-icons/1.png" alt="#">
+						</figure>
+						<h4>Buy BUSD on PancakeSwap</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-md-4 process">
+					<div class="process-step">
+						<figure class="process-icon">
+							<img src="img/process-icons/2.png" alt="#">
+						</figure>
+						<h4>Invest in on of our Plans</h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-md-4 process">
+					<div class="process-step">
+						<figure class="process-icon">
+							<img src="img/process-icons/3.png" alt="#">
+						</figure>
+						<h4>Withdraw daily</h4>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Process section end -->
+
+	<!-- About section -->
+	<section class="about-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="about-text container">
+					<h2>So what's this all about?</h2>
+					<h5>Crypto Farmers are the Evolution! Fair and transparent for all Users</h5>
+					<p>Select your plan and Invest, then withdraw earnings.
+The principal deposit cannot be withdrawn, only the retuns and referral rewards are paid out.
+DYOR!</p>
+<p>
+<b>Referral link</b>: <a id="playerreflink" onclick="copyRef()">? </a><br>
+get 7% back by inviting a new user to the farm <br>
+</p>
+
+				<h5>Contract</h5>
+				<p><a href="https://bscscan.com/address/0x0CC89e2eA162C452182d7b8AB742E2C8fe6547Ac" target="blank"><img src="img/bscan_logo.png" /></a>
+				</p>
+
+				</div>
+			</div>
+			<!--
+			<div class="about-img">
+				<img src="img/about-img.png" alt="">
+			</div>
+			-->
+		</div>
+	</section>
+
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row spad">
+				<div class="col-md-6 col-lg-3 footer-widget">
+					<div>BUSD TokenPrinters farm</div>
+					<p>we love BUSD</p>
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved!</i>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="js/farmer/browser.min.js"></script>
+	<script src="js/farmer/breakpoints.min.js"></script>
+	<script src="js/farmer/util.js"></script>
+	<script src="js/farmer/interface.js"></script>
+	<script src="js/farmer/web3.min.js"></script>
+	<script src="js/farmer/main_eth.js"></script>
+	<script src="js/farmer/crypto-js/4.0.0/crypto-js.min.js"></script>
+</body>
+</html>
